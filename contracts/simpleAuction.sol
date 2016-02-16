@@ -18,7 +18,7 @@ contract SimpleAuction {
   /// Create a simple auction with '_biddingTime'
   /// seconds bidding time on behalf of the
   /// beneficiary address '_beneficiary'.
-  function (SimpleAuction(uint _biddingTime, address _beneficiary) {
+  function SimpleAuction(uint _biddingTime, address _beneficiary) {
     beneficiary = _beneficiary;
     auctionStart = now;
     biddingTime = _biddingTime;
