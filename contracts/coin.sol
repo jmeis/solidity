@@ -10,12 +10,14 @@ contract Coin {
   function Coin() {
     minter = msg.sender;
   }
+
   function mint(address receiver, uint amount) {
     if (msg.sender != minter) {
       return;
     }
     balances[receiver] += amount;
   }
+
   function send (address receiver, uint amount) {
     if (balances[msg.sender] < amount) {
       return;

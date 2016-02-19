@@ -23,6 +23,7 @@ contract SimpleAuction {
     auctionStart = now;
     biddingTime = _biddingTime;
   }
+
   /// Bid on the auction with the value sent
   /// together with this transaction.
   /// The value will only be refunded if the
