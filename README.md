@@ -1,5 +1,5 @@
 # Solidity examples
-The solidity-examples project practices developing smart contracts for financial cryptographic applications using Solidity. This repository can be used to observe some example applications of the language.
+The solidity-examples repository practices developing smart contracts for financial cryptographic applications using Solidity. This project can be used to observe some example applications of the language.
 
 Note: Many of the contracts included are either from or inspired by the examples from the official Solidity documentation (http://solidity.readthedocs.org).
 
