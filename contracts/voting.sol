@@ -34,7 +34,7 @@ contract Ballot {
       // Proposal object and 'proposal.push(...)'
       // appends it to the end of 'proposals.'
       proposals.push(Proposal({
-        name: proposalNames, 
+        name: proposalNames[i], 
         voteCount: 0
       }));
     }
@@ -43,7 +43,7 @@ contract Ballot {
   // Give 'voter' the right to vote on this ballot.
   // May only be called by 'chairperson.'
   function giveRightToVote(address voter) {
-    if (msg.sender != chairperson || voter[voter].voted) {
+    if (msg.sender != chairperson || voters[voter].voted) {
       // 'throw' terminates and reverts all changes to
       // the state and to Ether balances. It is often
       // a good idea to use this if functions are
@@ -63,7 +63,7 @@ contract Ballot {
     }
     // Forward the delegation as long as
     // 'to' also delegated.
-    while (voters[to].delegate != address(0) && voters[to] != msg.sender) {
+    while (voters[to].delegate != address(0) && voters[to].delegate != msg.sender) {
       to = voters[to].delegate;
     }
     // We found a loop in the delegation, not allowed.
