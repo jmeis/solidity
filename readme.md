@@ -1,4 +1,4 @@
-# Solidity examples
+# solidity
 The solidity repository practices developing smart contracts for financial cryptographic applications using Solidity.
 
 **Note:** Many of the contracts included are either from or inspired by the examples from the official [Solidity documentation](http://solidity.readthedocs.org).
