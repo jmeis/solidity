@@ -1,5 +1,7 @@
-<img src="readme/logo.png" alt="ethereum logo" width="300px"/>
+<img src="readme/logo.png" alt="ethereum logo" width="250px"/>
+
 ## Solidity
+
 Examples in Solidity that practice developing smart contracts for financial cryptographic applications
 
 ### Table of Contents
