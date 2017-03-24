@@ -1,4 +1,4 @@
-<img src="readme/logo.png" alt="ethereum logo" width="300px"/>
+<img src="readme/logo.png" alt="ethereum logo" width="250px"/>
 
 ## Solidity
 
